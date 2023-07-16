@@ -1,11 +1,16 @@
 package lesson1;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Book[] books = BookDatabase.getAllBooks();
         printBooks(books);
 
         Book book = BookDatabase.findBookByAuthorFullName("Author2");
+        System.out.println(book);
+
+        book = BookDatabase.findBookById("q1");
         System.out.println(book);
     }
 
@@ -18,12 +23,12 @@ public class Main {
 
 //    Написати програму:
 //        Є клас lesson1.Book, який має властивості id, title, price and author. lesson1.Author це також клас який має властивості fullName, age.
-//        Зробити клас по типу бази даних. В цьому класі будуть публічні статичні методи:
+//        Зробити клаlesson1.Book[с по типу бази даних. В цьому класі будуть публічні статичні методи:
 //        lesson1.Book[] getAllBooks();
 //
 //        lesson1.Book findBookByAuthorFullName(String fullName)
 
-//        lesson1.Book[] findBooksByAuthorFullName(String fullName)
+//        ] fin)dBooksByAuthorFullName(String fullName
 //
 //        lesson1.Book findBookById(int id);
 //
