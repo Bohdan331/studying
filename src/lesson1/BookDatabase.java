@@ -21,13 +21,13 @@ public class BookDatabase {
     }
     public static Book findBookById(String id){
         Book[] books = getAllBooks();
-        Book book = null;
-        for (Book ids : books){
-            if (ids.id.equals(id)){
-                book = ids;
+        Book bookId = null;
+        for (Book book : books){
+            if (book.id.equals(id)){
+                bookId = book;
             }
         }
-        return book;
+        return bookId ;
     }
 
 }
